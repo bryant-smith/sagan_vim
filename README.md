@@ -1,7 +1,7 @@
 # VIM File for Sagan
 ### This adds to the hog.vim file already being used by Snort and Suricata
 
-`git clone gogs@gogs.qsecure.net:bsmith/vim.git`
+`git clone https://github.com/bryant-smith/sagan_vim.git`
 
 `mkdir -p ~/.vim/after/syntax/`
 
