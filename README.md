@@ -5,6 +5,6 @@
 
 `mkdir -p ~/.vim/after/syntax/`
 
-`cp ./vim/hog.vim ~/.vim/after/syntax/`
+`cp ./sagan_vim/hog.vim ~/.vim/after/syntax/`
 
 ![image1](./images/image1.png)
