@@ -6,6 +6,8 @@ hi link SaganRuleOptionJson Comment
 hi link SaganRuleOptionMeta Comment
 hi link SaganRuleOptionOther Comment
 hi link SaganVar	Type
+hi link SaganMsgProduct	PreProc
+
 
 " Hog keywords
 syn keyword     HogRuleProto	skipwhite nextgroup=HogRuleSrcIP any
@@ -21,13 +23,14 @@ syn keyword	SaganRuleOptionOther	skipwhite contained nextgroup=HogRuleSROP norma
 syn keyword	SaganTodo	TODO NOTE ALTER contained
 "syn keyword	SaganVar	sagan contained
 syn match	SaganVar	"%sagan%" contained
+syn match	SaganMsgProduct	"\v\[[a-zA-Z-_]+\]" contained
 
 
 " Sagan Region
 syn region	SaganComment	start="#" end="$" contains=SaganTodo
 
 " Hog Region
-syn region      HogString     contained start='"' end='"' extend oneline contains=HogHexEsc,SaganVar
+syn region      HogString     contained start='"' end='"' extend oneline contains=HogHexEsc,SaganVar,SaganMsgProduct
 syn region      HogRuleBlock      start="(" end=")" transparent skipwhite contained contains=HogRuleOption,HogComment,SaganRuleOption,SaganRuleOptionJson,SaganRuleOptionMeta,SaganRuleOptionOther fold
 
 
